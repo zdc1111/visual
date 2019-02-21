@@ -1,7 +1,13 @@
 package com.apexsoft.visual.mybatis.model;
 
-import java.math.BigDecimal;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserDomain {
     private BigDecimal userid;
 
@@ -10,36 +16,4 @@ public class UserDomain {
     private String password;
 
     private String phone;
-
-    public BigDecimal getUserid() {
-        return userid;
-    }
-
-    public void setUserid(BigDecimal userid) {
-        this.userid = userid;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone == null ? null : phone.trim();
-    }
 }

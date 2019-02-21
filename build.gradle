@@ -35,13 +35,12 @@ repositories {
 }
 
 dependencies {
-    compile group: 'com.github.pagehelper', name: 'pagehelper', version: '4.1.0'
+    compile group: 'com.github.pagehelper', name: 'pagehelper', version: '4.1.0'  //分页
     compile group: 'com.oracle', name: 'ojdbc6', version: '12.1.0.1-atlassian-hosted'
-    runtime('org.springframework.boot:spring-boot-devtools')
+    runtime('org.springframework.boot:spring-boot-devtools')  //热部署
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.0'
     compileOnly 'org.projectlombok:lombok'
-    runtimeOnly 'mysql:mysql-connector-java'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 }
@@ -53,8 +52,8 @@ configurations {
 mybatisGenerator {
     verbose = true
     configFile = 'src/main/resources/generator/generatorConfig.xml'
-}
+}/*
 bootRun {
 //开启页面热加载功能
     addResources = true
-}
+}*/

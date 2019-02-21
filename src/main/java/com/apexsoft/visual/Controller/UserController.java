@@ -7,7 +7,7 @@ import com.apexsoft.visual.mybatis.model.UserDomain;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(value = "/user")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired

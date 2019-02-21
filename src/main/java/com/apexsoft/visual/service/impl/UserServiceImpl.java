@@ -12,7 +12,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserDomainMapper userDao;//这里会报错，但是并不会影响
+    private UserDomainMapper userDao;
 
     @Override
     public int addUser(UserDomain user) {
